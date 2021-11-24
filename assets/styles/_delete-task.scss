@@ -7,7 +7,16 @@
   padding: 30px 35px;
   background-color: $secondary-color;
   color: $primary-font;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .tasks_selected {
+    padding: 30px 131px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .tasks_selected {
+    padding: 30px 365px;
+  }
 }

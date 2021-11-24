@@ -146,6 +146,7 @@ label {
 }
 .task_display {
   padding: 0 27px;
+  margin-bottom: 50px;
 }
 .task_display__header {
   font-size: 16px;
@@ -176,6 +177,9 @@ label {
   color: #ffffff;
   padding-left: 15px;
 }
+.task_display__result {
+  display: none;
+}
 .task_display__remaining {
   margin-top: 14px;
   color: #6c6a7c;
@@ -198,11 +202,18 @@ label {
   padding: 30px 35px;
   background-color: #2b2a33;
   color: #ffffff;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .tasks_selected {
+    padding: 30px 131px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .tasks_selected {
+    padding: 30px 365px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
