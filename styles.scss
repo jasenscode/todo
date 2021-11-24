@@ -1,0 +1,16 @@
+@import "./assets/styles/_variables.scss";
+@import "./assets/styles/_typography.scss";
+@import "./assets/styles/_buttons.scss";
+@import "./assets/styles/_header.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $primary-color;
+  font-family: "Jost";
+  padding: 26px;
+}

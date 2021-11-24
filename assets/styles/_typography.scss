@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap");
+@import "./_variables.scss";
+
+.heading {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 500;
+  color: $primary-font;
+}
+
+::placeholder,
+p {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+input,
+label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: 700;
+  color: $primary-font;
+}
