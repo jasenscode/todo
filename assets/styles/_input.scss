@@ -1,0 +1,32 @@
+.create {
+  padding: 0 27px;
+  .create__task {
+    display: flex;
+    justify-content: space-between;
+    background-color: $secondary-color;
+    border-radius: 7px;
+    border: 2px dashed $secondary-font;
+    padding: 0px 32px;
+    margin-bottom: 53px;
+    &__input {
+      background-color: $secondary-color;
+      border: none;
+      padding: 19px 32px;
+      width: 100%;
+      outline: none;
+      color: $primary-font;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .create {
+    padding: 0 131px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .create {
+    padding: 0 365px;
+  }
+}

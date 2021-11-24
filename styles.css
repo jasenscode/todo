@@ -2,6 +2,7 @@
 .heading {
   font-size: 48px;
   font-weight: 600;
+  color: #ffffff;
 }
 
 .logo {
@@ -31,21 +32,175 @@ label {
 .btn {
   background-image: linear-gradient(180deg, #e1a0a0, #e58181);
   box-shadow: 0 10px 40px #6b3838;
+  cursor: pointer;
 }
 .btn:hover {
   background-image: linear-gradient(180deg, #e2c1c1, #ea8282);
 }
 
-.reset {
+.btn-reset {
   padding: 12.5px 39px;
   border-radius: 7px;
   border: none;
 }
 
-header {
+.btn-add {
+  background-color: #2b2a33;
+  border: none;
+  font-size: 21px;
+  color: #e58181;
+  cursor: pointer;
+}
+
+.btn-edit {
+  background-color: #2b2a33;
+  border: none;
+  font-size: 21px;
+  color: #e58181;
+  cursor: pointer;
+}
+
+.btn-delete {
+  border: none;
+  border-radius: 7px;
+  font-size: 12px;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 12px 14px;
+}
+.btn-delete .fa-trash-alt {
+  font-size: 16px;
+  padding-left: 12px;
+}
+
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 27px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 38px 66px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 60px 122px;
+  }
+}
+.welcome {
+  margin-bottom: 36px;
+  padding: 0 27px;
+}
+.welcome__header {
+  font-size: 36px;
+  margin-bottom: 18px;
+}
+.welcome__text {
+  color: #6c6a7c;
+  line-height: 150%;
+}
+
+@media screen and (min-width: 768px) {
+  .welcome {
+    padding: 0 131px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .welcome {
+    padding: 0 365px;
+  }
+}
+.create {
+  padding: 0 27px;
+}
+.create .create__task {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2b2a33;
+  border-radius: 7px;
+  border: 2px dashed #6c6a7c;
+  padding: 0px 32px;
+  margin-bottom: 53px;
+}
+.create .create__task__input {
+  background-color: #2b2a33;
+  border: none;
+  padding: 19px 32px;
+  width: 100%;
+  outline: none;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .create {
+    padding: 0 131px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .create {
+    padding: 0 365px;
+  }
+}
+.task_display {
+  padding: 0 27px;
+}
+.task_display__header {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 21px;
+}
+.task_display__result {
+  color: #6c6a7c;
+  margin-bottom: 18px;
+}
+.task_display__item {
+  background-color: #2b2a33;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1px;
+}
+.task_display__item .item_container {
+  display: flex;
+  align-items: center;
+}
+.task_display__item .item_container .item__checkbox {
+  background-color: #2b2a33;
+  border: 1px solid #e58181;
+}
+.task_display__item .item_container .item__desc {
+  color: #ffffff;
+  padding-left: 15px;
+}
+.task_display__remaining {
+  margin-top: 14px;
+  color: #6c6a7c;
+}
+
+@media screen and (min-width: 768px) {
+  .task_display {
+    padding: 0 131px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .task_display {
+    padding: 0 365px;
+  }
+}
+.tasks_selected {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 35px;
+  background-color: #2b2a33;
+  color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 * {
@@ -57,5 +212,15 @@ header {
 body {
   background-color: #232229;
   font-family: "Jost";
-  padding: 26px;
+}
+
+main {
+  padding: 0 27px;
+  margin-top: 150px;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    padding: 0 131px;
+  }
 }

@@ -1,0 +1,50 @@
+@import "./_variables.scss";
+
+.task_display {
+  padding: 0 27px;
+  &__header {
+    font-size: 16px;
+    color: $primary-font;
+    margin-bottom: 21px;
+  }
+  &__result {
+    color: $secondary-font;
+    margin-bottom: 18px;
+  }
+  &__item {
+    background-color: $secondary-color;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1px;
+    .item_container {
+      display: flex;
+      align-items: center;
+      .item__checkbox {
+        background-color: $secondary-color;
+        border: 1px solid $btn-color;
+      }
+      .item__desc {
+        color: $primary-font;
+        padding-left: 15px;
+      }
+    }
+  }
+  &__remaining {
+    margin-top: 14px;
+    color: $secondary-font;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .task_display {
+    padding: 0 131px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .task_display {
+    padding: 0 365px;
+  }
+}

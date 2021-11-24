@@ -1,0 +1,26 @@
+@import "./_variables.scss";
+
+.welcome {
+  margin-bottom: 36px;
+  padding: 0 27px;
+  &__header {
+    font-size: 36px;
+    margin-bottom: 18px;
+  }
+  &__text {
+    color: $secondary-font;
+    line-height: 150%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .welcome {
+    padding: 0 131px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .welcome {
+    padding: 0 365px;
+  }
+}

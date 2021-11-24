@@ -4,14 +4,62 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="styles.css" />
     <title>To Do App</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <h1 class="logo">MyToDos</h1>
-      <button class="btn reset">Reset</button>
+      <button class="btn btn-reset">Reset</button>
     </header>
+
+    <section class="welcome">
+      <h2 class="welcome__header heading">Welcome Back Jasen!</h2>
+      <p class="welcome__text">Let's enter the tasks we need to complete for this upcoming week. Just use the input below to create a todo.</p>
+    </section>
+
+    <section class="create">
+      <div class="create__task">
+        <input class="create__task__input" type="text" placeholder="Add your task here..." />
+        <button class="btn-add"><i class="fas fa-plus-circle"></i></button>
+      </div>
+    </section>
+
+    <section class="task_display">
+      <h3 class="task_display__header">Tasks</h3>
+      <p class="task_display__result">All tasks have been completed. Great job!</p>
+
+      <div class="task_display__item">
+        <div class="item_container">
+          <input class="item__checkbox" type="checkbox" />
+          <p class="item__desc">Task goes here</p>
+        </div>
+        <button class="btn-edit"><i class="fas fa-pen"></i></button>
+      </div>
+      <div class="task_display__item">
+        <div class="item_container">
+          <input class="item__checkbox" type="checkbox" />
+          <p class="item__desc">Task goes here</p>
+        </div>
+        <button class="btn-edit"><i class="fas fa-pen"></i></button>
+      </div>
+      <div class="task_display__item">
+        <div class="item_container">
+          <input class="item__checkbox" type="checkbox" />
+          <p class="item__desc">Task goes here</p>
+        </div>
+        <button class="btn-edit"><i class="fas fa-pen"></i></button>
+      </div>
+
+      <p class="task_display__remaining">Tasks to complete: <span class="task_number"></span></p>
+    </section>
+
+    <section class="tasks_selected">
+      <p><span class="tasks_selected__info"></span>Task(s) Selected</p>
+      <button class="btn btn-delete">Delete<i class="far fa-trash-alt"></i></button>
+    </section>
+
     <script src="main.js" defer></script>
   </body>
 </html>

@@ -1,5 +1,18 @@
-header {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 27px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 38px 66px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 60px 122px;
+  }
 }

@@ -2,6 +2,10 @@
 @import "./assets/styles/_typography.scss";
 @import "./assets/styles/_buttons.scss";
 @import "./assets/styles/_header.scss";
+@import "./assets/styles/_welcome.scss";
+@import "./assets/styles/_input.scss";
+@import "./assets/styles/_task-display.scss";
+@import "./assets/styles/_delete-task.scss";
 
 * {
   padding: 0;
@@ -12,5 +16,15 @@
 body {
   background-color: $primary-color;
   font-family: "Jost";
-  padding: 26px;
+}
+
+main {
+  padding: 0 27px;
+  margin-top: 150px;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    padding: 0 131px;
+  }
 }

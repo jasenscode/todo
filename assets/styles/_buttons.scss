@@ -1,13 +1,45 @@
+@import "./_variables.scss";
+
 .btn {
   background-image: linear-gradient(180deg, #e1a0a0, #e58181);
   box-shadow: 0 10px 40px #6b3838;
+  cursor: pointer;
   &:hover {
     background-image: linear-gradient(180deg, #e2c1c1, #ea8282);
   }
 }
 
-.reset {
+.btn-reset {
   padding: 12.5px 39px;
   border-radius: 7px;
   border: none;
+}
+
+.btn-add {
+  background-color: $secondary-color;
+  border: none;
+  font-size: 21px;
+  color: $btn-color;
+  cursor: pointer;
+}
+
+.btn-edit {
+  background-color: $secondary-color;
+  border: none;
+  font-size: 21px;
+  color: $btn-color;
+  cursor: pointer;
+}
+
+.btn-delete {
+  border: none;
+  border-radius: 7px;
+  font-size: 12px;
+  color: $primary-font;
+  cursor: pointer;
+  padding: 12px 14px;
+  .fa-trash-alt {
+    font-size: 16px;
+    padding-left: 12px;
+  }
 }
