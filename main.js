@@ -28,9 +28,14 @@ const handleAdd = () => {
     <button class="btn-edit"><i class="fas fa-pen"></i></button>
     </div>`;
 
-  taskDisplay.innerHTML += taskHTML;
-  taskInput.value = "";
-  tasksRemaining.innerHTML = parseInt(tasksRemaining.innerHTML) + 1;
+  if (task === "") {
+    alert("Please enter a task!");
+  } else {
+    console.log(task);
+    taskDisplay.innerHTML += taskHTML;
+    taskInput.value = "";
+    tasksRemaining.innerHTML = parseInt(tasksRemaining.innerHTML) + 1;
+  }
 };
 
 addBtn.addEventListener("click", handleAdd);
