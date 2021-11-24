@@ -4,6 +4,8 @@
 const taskInput = document.querySelector(".create__task__input");
 const addBtn = document.querySelector(".btn-add");
 const deleteBtn = document.querySelector(".btn-delete");
+const editBtn = document.querySelector(".btn-edit");
+const checkbox = document.querySelector(".item__checkbox");
 const taskDisplay = document.querySelector(".task_display__container");
 const tasksRemaining = document.querySelector(".task_number");
 
@@ -32,6 +34,17 @@ const handleAdd = () => {
 
 addBtn.addEventListener("click", handleAdd);
 
+// EDIT TASK
+// user clicks edit icon
+// label field turns into a text input
+// user types
+
+// const handleEdit = () => {
+//   console.log("edit");
+// };
+
+// editBtn.addEventListener("click", handleEdit);
+
 // DELETE TASK
 // user checks box of relevant task
 // tasks selected span is updated by 1
@@ -39,5 +52,9 @@ addBtn.addEventListener("click", handleAdd);
 // checked task is removed from task display container
 // tasks selected span is updated to display nothing
 // task number span is reduced by 1
+
+const handleDelete = () => {
+  console.log(checkbox);
+};
 
 deleteBtn.addEventListener("click", handleDelete);
