@@ -4,6 +4,7 @@
 const taskInput = document.querySelector(".create__task__input");
 const addBtn = document.querySelector(".btn-add");
 const deleteBtn = document.querySelector(".btn-delete");
+const resetBtn = document.querySelector(".btn-reset");
 const editBtn = document.querySelector(".btn-edit");
 const checkbox = document.querySelector(".item__checkbox");
 const taskDisplay = document.querySelector(".task_display__container");
@@ -58,3 +59,14 @@ const handleDelete = () => {
 };
 
 deleteBtn.addEventListener("click", handleDelete);
+
+// RESET
+// remove innerHTML from task container
+// reset tasks to complete to zero
+
+const handleReset = () => {
+  taskDisplay.innerHTML = "";
+  tasksRemaining.innerHTML = 0;
+};
+
+resetBtn.addEventListener("click", handleReset);
